@@ -1,0 +1,19 @@
+.logoH1 {
+    background-color: $color2;
+
+    h1 {
+        font-family: $fontdekiru;
+        font-size: 2.5rem;
+        font-weight: 100;
+        color: $color1;
+
+        span {
+            font-family: $fontdekiru;
+            font-size: 2.5rem;
+            font-weight: 100;
+            color: $color4;
+        }
+    }
+}
+
+

@@ -1,0 +1,101 @@
+@media (min-width:320px) and (max-width:576px) {
+    .sec-central-inicio {
+        background-color: none;
+    }
+}
+
+@media (min-width:576px) {
+    
+}
+
+@media (min-width:992px) {
+    .nav-item {
+        border-radius: 2px;
+        width: 100px;
+        text-align: center;
+
+        &:hover {
+            background-color: $color2;
+        }
+
+    }
+
+    .dropdown-menu {
+        background-color: $color3;
+
+        .dropdown-item {
+            font-size: 1rem;
+
+            &:hover {
+                background-color: $color2;
+                border-radius: 2px;
+            }
+        }
+    }
+}
+
+@media (min-width:320px) {
+    .grid-container_tienda {
+        display: grid;
+        grid-template-columns: repeat(3, 110px);
+        grid-template-rows: repeat(3, 110px);
+        gap: 10px;
+        justify-content: center;
+
+        .galeria__img {
+            width: 100%;
+            border: 1px solid $color2;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+
+
+            h2 {
+                font-size: 13px;
+                position: absolute;
+            }
+
+            img {
+                width: 100%;
+                cursor: pointer;
+                &:hover{
+                    transform: scale(1.050);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:576px) {
+
+    .sec-central-inicio {
+        background-color: $color2;
+    }
+
+    .grid-container_tienda {
+        grid-template-columns: repeat(3, 180px);
+        grid-template-rows: repeat(3, 180px);
+
+        .galeria__img {
+
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (min-width:768px) {
+    .grid-container_tienda {
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: repeat(3, 200px);
+    }
+}
+
+@media (min-width:1200px) {
+    .grid-container_tienda {
+        grid-template-columns: repeat(3, 240px);
+        grid-template-rows: repeat(3, 240px);
+    }
+}

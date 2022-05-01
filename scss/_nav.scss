@@ -1,0 +1,49 @@
+header {
+    nav.navbar {
+        background-color: $color3;
+
+        .logo {
+            
+            p {
+                font-family: $fontdekiru;
+                font-size: 2.5rem;
+                font-weight: 100;
+                color: $color1;
+
+                span {
+                    font-family: $fontdekiru;
+                    font-size: 2.5rem;
+                    font-weight: 100;
+                    color: $color4;
+                }
+            }
+
+            a {
+                text-decoration: none;
+
+            }
+        }
+
+        .dropdown-item {
+            align-self: start;
+            width: 180px;
+        }
+
+        .dropdown-menu {
+            background-color: $color3;
+
+            li {
+
+                .dropdown-item {
+                    &:active {
+                        background-color: $color2;
+                    }
+
+
+                }
+            }
+
+        }
+
+    }
+}
