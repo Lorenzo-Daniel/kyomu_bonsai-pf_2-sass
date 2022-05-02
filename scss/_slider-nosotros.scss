@@ -10,7 +10,6 @@
 .banner2,
 .banner3,
 .banner4 {
-   
     width: 100%;
     position: absolute;
     left: 0;
@@ -33,7 +32,6 @@
 .text-box {
     width: 100vw;
     position: absolute;
-    top: 5vw;
     left: 5vw;
     color: black;
     animation: textup 5s linear infinite;
@@ -55,7 +53,8 @@
      p {
         font-size: 18px;
         line-height: 18px;
-        margin-top: 6vw;
+        margin-top: 4vw;
+        font-weight: bolder;
     }
     
 }
@@ -70,10 +69,6 @@
         transform: translateY(0px);
     }
 }
-
-
-
-
 
 
 .banner1 {

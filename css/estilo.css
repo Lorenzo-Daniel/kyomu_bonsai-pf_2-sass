@@ -52,34 +52,29 @@ header nav.navbar .dropdown-menu li .dropdown-item:active {
   color: rgba(0, 0, 0, 0.63);
 }
 
-.accordion-button:focus {
-  border-color: #aca49a;
-  box-shadow: #908b83;
-}
-
-.accordion-button {
-  background-color: #aca49a;
-  border-bottom: 1px solid #00000057;
-}
-
-.accordion-button:not(.collapsed) {
-  color: black;
-  background-color: #908b83;
-  box-shadow: 0px 0px 3px;
-}
-
-.accordion-button.collapsed:focus {
-  box-shadow: none;
-}
-
 .accordion-item {
   background-color: #ebebeb;
   border-color: #aca49a;
   font-weight: bolder;
 }
 
-.accordion-button:not(.collapsed)::after {
+.accordion-item .accordion-button {
+  background-color: #aca49a;
+  border-bottom: 1px solid #00000057;
+}
+
+.accordion-item .accordion-button:not(.collapsed) {
+  color: black;
+  background-color: #908b83;
+  box-shadow: 0px 0px 3px;
+}
+
+.accordion-item .accordion-button:not(.collapsed)::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-item .collapsed:focus {
+  box-shadow: none;
 }
 
 footer {
@@ -169,7 +164,6 @@ footer iframe {
 .text-box {
   width: 100vw;
   position: absolute;
-  top: 5vw;
   left: 5vw;
   color: black;
   animation: textup 5s linear infinite;
@@ -190,7 +184,8 @@ footer iframe {
 .text-box p {
   font-size: 18px;
   line-height: 18px;
-  margin-top: 6vw;
+  margin-top: 4vw;
+  font-weight: bolder;
 }
 
 @keyframes textup {
@@ -299,25 +294,26 @@ footer iframe {
   background-color: #aca49a;
 }
 
-.button-group .btn-outline-primary {
+.btn {
   border-color: #908b83;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.277);
   background-color: #aca49a;
 }
 
-.button-group .btn-outline-primary:hover {
+.btn:hover {
   background-color: #908b83;
+  border: 1px solid #908b83;
 }
 
-.button-group .btn-outline-primary:active {
+.btn:active {
   background-color: #858278;
 }
 
-.button-group .btn-outline-primary:focus {
+.btn:focus {
   box-shadow: 0px 0px 5px black;
 }
 
-.button-group .btn-outline-primary a {
+.btn a {
   font-size: 25px;
   letter-spacing: 1px;
   font-weight: bold;
